@@ -25,9 +25,7 @@ How to Use
 Requirements:
   Android Version: 5.0 (Lollipop) or higher
   Permissions: The app requires permission to access your device’s notifications, alarm sounds, and storage.
-  Feedback & Support
 
-We’re committed to making Reminder Pro the best it can be. If you have any questions, feedback, or need support, please contact us at support@reminderpro.com.
 
 License
 
