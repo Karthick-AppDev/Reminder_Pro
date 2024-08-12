@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".CreateAlarmActivity">
+
+<Button
+    android:id="@+id/selectDate"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:text="select date"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.156" />
+
+<Button
+    android:id="@+id/selectTime"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:text="Select time"
+    app:layout_constraintStart_toStartOf="@+id/selectDate"
+    app:layout_constraintTop_toBottomOf="@+id/selectDate" />
+
+<TextView
+    android:id="@+id/dataTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="TextView"
+    app:layout_constraintBottom_toBottomOf="@+id/selectDate"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/selectDate"
+    app:layout_constraintTop_toTopOf="@+id/selectDate" />
+
+<TextView
+    android:id="@+id/timeTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="TextView"
+    app:layout_constraintBottom_toBottomOf="@+id/selectTime"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/selectTime"
+    app:layout_constraintTop_toTopOf="@+id/selectTime" />
+
+<Button
+    android:id="@+id/setAlarm"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_marginTop="140dp"
+    android:text="Set Alarm"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.478"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/selectTime" />
+
+<Button
+    android:id="@+id/cancelAlarm"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="56dp"
+    android:text="Cancel Alarm"
+    app:layout_constraintEnd_toEndOf="@+id/setAlarm"
+    app:layout_constraintStart_toStartOf="@+id/setAlarm"
+    app:layout_constraintTop_toBottomOf="@+id/setAlarm" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="371dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Enter Reminder heading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/selectTime"
+        app:layout_constraintTop_toBottomOf="@+id/selectTime" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
